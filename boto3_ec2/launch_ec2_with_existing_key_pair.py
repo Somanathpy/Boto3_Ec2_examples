@@ -10,3 +10,4 @@ response = client.run_instances(ImageId='ami-04590e7389a6e577c',
 					 MaxCount=1) 
 for instance in response['Instances']:
 	print(instance['InstanceId'])
+	
