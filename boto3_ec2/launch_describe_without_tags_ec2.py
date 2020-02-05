@@ -30,30 +30,9 @@ SecurityGroupIds=['sg-0721330370518f373'],
 
 # if you un-comment SecurityGroups , Tags fails because, SecurityGroupId=sg-0721330370518f373 already has SecurityGroup (cloud-test) assigned to it.
 SubnetId =  'subnet-1ad6b37d',
-    """
-TagSpecifications = [
-		{
 
-                 		'ResourceType': 'instance',
-                 		'Tags': [
-                 				{
-                 					'Key' : 'Department',
-                 					'Value': 'Developers'
-                 					},
-                 				{
-                 					'Key' : 'Name',
-                 					'Value' : 'cloud_test'
-                 				},
-                 				{	
-                 					'Key' : 'employee',
-                 					'Value' : 'somnath'
-                 				},
-                 				]
-
-                 				}],
-
-    """
 )
+
    
    
 for instance in response['Instances']:
